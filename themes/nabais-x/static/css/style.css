@@ -1,0 +1,260 @@
+/* Reset and base styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Header styles */
+#main-header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu-link a {
+    color: rgba(255, 255, 255, 0.8); /* More transparent white */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    margin-left: 1em; /* Space between links */
+}
+
+#menu-link a:hover {
+    color: #fff; /* Full white on hover */
+}
+
+.header-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#site-title {
+    margin: 0 0 0.5em;
+    font-size: 1.5em;
+}
+
+#profile-pic {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+#ln-desc {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+
+/* Content styles */
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+/* Social links styles */
+#social {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+/* Footer styles */
+#main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+#main-footer p {
+    margin: 0.1em 0;
+}
+
+#main-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#main-footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Blog styles */
+/* Blog-specific styles */
+
+/* Article title */
+.entry-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a hover{
+    text-decoration: underline;
+    color: #333;
+}
+
+/* Article metadata */
+.entry-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+/* Article content */
+.entry-content {
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+
+/* Headings within articles */
+.entry-content h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.entry-content h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+/* Links within articles */
+.entry-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.entry-content a:hover {
+    text-decoration: underline;
+}
+
+/* Lists within articles */
+.entry-content ul, .entry-content ol {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Blockquotes */
+.entry-content blockquote {
+    border-left: 3px solid #007bff;
+    padding-left: 1em;
+    margin-left: 0;
+    color: #666;
+    font-style: italic;
+}
+
+/* Code blocks */
+.entry-content pre {
+    background-color: #f4f4f4;
+    padding: 1em;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+/* Inline code */
+.entry-content code {
+    background-color: #f4f4f4;
+    padding: 0.2em 0.4em;
+    font-family: monospace;
+}
+
+/* Images */
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+/* Tags */
+.tags {
+    margin-top: 1em;
+}
+
+.tags a {
+    display: inline-block;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0.2em 0.5em;
+    margin-right: 0.5em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.tags a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.pagination a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,9 @@
+{% if MAIN_MENU %}
+<nav id="menu-link">
+  <a href="{{ SITEURL }}/">Home</a>
+
+  {% for title, link in MENUITEMS %}
+  <a href="{{ link }}">{{ title }}</a>
+  {% endfor %}
+</nav>
+{% endif %}
