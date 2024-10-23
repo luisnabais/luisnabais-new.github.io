@@ -72,5 +72,8 @@ PAGINATED_TEMPLATES = {'index': None, 'blog_index': None}
 # Uncomment to use relative URLs in development
 # RELATIVE_URLS = True
 
-# Uncomment these lines when ready to publish
+# Publish settings
 SITEURL = 'https://nabais.eu'
+DOMAIN = SITEURL
+FEED_DOMAIN = SITEURL
+HTTPS = True
