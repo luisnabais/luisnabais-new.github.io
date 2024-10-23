@@ -1,0 +1,282 @@
+/* Reset and base styles */
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.sidebar div {
+    padding: 20px;
+    margin: 0;
+}
+
+.sidebar div img {
+    border-radius: 50%;
+    max-width: 128px;
+}
+
+.sidebar div h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sidebar div p {
+    margin-top: 15px;
+    font-size: .92em;
+}
+
+.sidebar nav ul li {
+    line-height: 1.6em;
+    font-size: 1.28em;
+}
+
+
+
+/* Main */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-content a hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+
+/* Social links */
+#social {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+
+/* Pelican footer text */
+footer {
+    font-size: 0.7em;
+}
+
+/* Main Footer */
+#main-footer {
+    font-size: 0.6em;
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 0.1em 0;
+}
+
+#main-footer a {
+    text-decoration: none;
+}
+
+#main-footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Article title */
+.entry-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+}
+
+/* Article metadata */
+.entry-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+/* Article content */
+.entry-content {
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+
+/* Headings within articles */
+.entry-content h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.entry-content h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+/* Links within articles */
+.entry-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.entry-content a:hover {
+    text-decoration: underline;
+}
+
+/* Lists within articles */
+.entry-content ul,
+.entry-content ol {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Blockquotes */
+.entry-content blockquote {
+    border-left: 3px solid #007bff;
+    padding-left: 1em;
+    margin-left: 0;
+    color: #666;
+    font-style: italic;
+}
+
+/* Code blocks */
+.entry-content pre {
+    background-color: #f4f4f4;
+    padding: 1em;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+/* Inline code */
+.entry-content code {
+    background-color: #f4f4f4;
+    padding: 0.2em 0.4em;
+    font-family: monospace;
+}
+
+/* Images */
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+
+
+
+/* Social */
+ul {
+    font-size: 1.1em;
+    padding-left: 12px
+}
+
+div.related-posts ul li {
+    padding: 4px 0
+}
+
+ul.list,
+ul.related-posts,
+ul.social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+ul.list {
+    padding: 1em 0
+}
+
+ul.list li {
+    padding: 4px
+}
+
+ul.social {
+    font-size: 1.6em;
+    padding-top: 20px
+}
+
+ul.social li {
+    display: inline
+}
+
+ul.social a:hover {
+    z-index: 1;
+    transform: translateY(-2px)
+}
+
+ul.social a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: .8em;
+    line-height: 36px
+}
