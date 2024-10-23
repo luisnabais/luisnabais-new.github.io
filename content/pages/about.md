@@ -36,6 +36,7 @@ I'm very motivated and positive and I love to expand it to other people.
 <br />
 
 Some fun facts about me:
+
 * My first computer was a ZX Spectrum 48K (thank you, dad, for presenting it to me while I was so young), where I met the world of programming, for the first time.
 * I've ran many (I lost count, but should be about 20-30) half-marathons (21.097 km) and two full marathons (42.195 km).
 * I truly believe that people can do anything they set their minds into, if they really desire it and fight for it.
