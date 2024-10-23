@@ -74,4 +74,3 @@ PAGINATED_TEMPLATES = {'index': None, 'blog_index': None}
 
 # Uncomment these lines when ready to publish
 SITEURL = 'https://nabais.eu'
-# OUTPUT_PATH = 'output/'
