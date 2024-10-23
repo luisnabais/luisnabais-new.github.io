@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if SITESUBTITLE %}
+    <meta name="description" content="{{ SITESUBTITLE }}" />
+    {% endif %}
+    <meta name="keywords" content="Luís, Nabais, luisnabais, luis_nabais, job, emprego, freelancer, freelancer, freelance, devops, project manager, project management, gestao de projectos, gestor de projectos, gestão de projectos, formador, formação, teacher, consultoria, consulting, freelancer, portugal, lisboa, odivelas, leadership, team leader, team leadership, liderança, equipa, equipas, líder, motivation, motivational, motivação, motivacional, personal development, desenvolvimento pessoal, growth, crescimento, evolucao, evolução">
+    <meta name="fediverse:creator" content="@luisnabais@mastodon.social">
+    <title>{% if title %}{{ title }} - {% endif %}{{ SITENAME }}</title>
+    <!--title>{% block title %}{{ SITENAME }}{% endblock %}</title-->
+    {% if STYLESHEET_URL %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css">
+    {% endif %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            {% include "partial/sidebar.html" %}
+        </aside>
+        <div class="main-content">
+            <main>
+                {% block content %}{% endblock %}
+            </main>
+            {% include "partial/footer.html" %}
+        </div>
+    </div>
+</body>
+
+</html>

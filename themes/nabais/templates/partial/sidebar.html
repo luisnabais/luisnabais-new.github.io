@@ -1,0 +1,44 @@
+<div class="sidebar-content">
+    <a href="{{ SITEURL }}/">
+    {% if SITELOGO %}
+    <img src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
+    {% else %}
+    <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
+    {% endif %}
+    </a>
+
+    <h1>
+    <a href="{{ SITEURL }}/">{{ SITETITLE }}</a>
+    </h1>
+
+    {% if SITESUBTITLE %}
+    <p>{{ SITESUBTITLE }}</p>
+    {% endif %}
+
+    {% if LINKS %}
+    <nav>
+    <ul class="list">            
+        {% for name, link in LINKS %}
+        <li>
+            <a href="{{ link }}" >{{ name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    </nav>
+    {% endif %}
+
+    {% if SOCIAL %}
+    <ul class="social">
+    {% for name, link in SOCIAL %}
+    <li>
+        <a class="sc-{{ name }}"
+            {% if name in relme %}rel="me"{% endif %}
+            href="{{ link }}"
+            target="_blank">
+        <i class="fa-brands fa-{{ name }}"></i>
+        </a>
+    </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+</div>

@@ -1,10 +1,10 @@
 AUTHOR = 'Luís Nabais'
 SITENAME = 'Luís Nabais'
 #SITEURL = 'https://luisnabais.github.io'
-#OUTPUT_PATH = 'output/'
+OUTPUT_PATH = 'output/'
 
 # Theme settings
-THEME = 'themes/nabais-x'
+THEME = 'themes/nabais'
 #THEME = 'Flex'
 SITETITLE = 'Luís Nabais'
 SITESUBTITLE = ' 🇵🇹 DevOps engineer, Linux specialist and trainer.<br />Passionate about Open Source, running, bodyweight fitness and travelling.'
@@ -50,15 +50,18 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = ()
+LINKS = (
+    ('Home', '/'),
+    ('Blog', '/blog'),
+)
 
 # Social widget
 SOCIAL = (
-    ("LinkedIn", "https://linkedin.com/in/luisnabais"),
-    ("Mastodon", "https://mastodon.social/@luisnabais"),
-    ("X",        "https://x.com/luis_nabais"),
-    ("GitLab",   "https://gitlab.com/luisnabais"),
-    ("GitHub",   "https://github.com/luisnabais")
+    ("linkedin", "https://linkedin.com/in/luisnabais"),
+    ("mastodon", "https://mastodon.social/@luisnabais"),
+    ("x-twitter",        "https://x.com/luis_nabais"),
+    ("github",   "https://github.com/luisnabais"),
+    ("gitlab",   "https://gitlab.com/luisnabais"),
 )
 
 MAIN_MENU = True
